@@ -2,13 +2,14 @@ body{
 	color:#999;
 	font-family: Verdana;
 }
+
 .main-page{
 	background:url(../images/bg1.png) repeat-x;
 	
 }
 .wrap{
 	width:1024px;
-	margin:0 auto;
+	margin:40px auto;
 }
 .header{
 	
@@ -26,7 +27,13 @@ body{
 .nav ul li{
 	float:left;
 	margin:0 20px;
-	
+	<!--
+	border-top: 4px groove #87c442;
+	transition:border-top 2s;
+	-moz-transition:width 2s; /* Firefox 4 */
+	-webkit-transition:border-top 2s; /* Safari and Chrome */
+	-o-transition:width 2s; /* Opera */
+	-->
 }
 
 .nav ul li a{
@@ -36,12 +43,28 @@ body{
 	color:#FFF;
 	margin:10px;
 	text-decoration:none;
+	<!--
+	border-top: 4px groove #87c442;
+	transition:border-top 2s;
+	-moz-transition:width 2s; /* Firefox 4 */
+	-webkit-transition:border-top 2s; /* Safari and Chrome */
+	-o-transition:width 2s; /* Opera */
+	-->
 }
-.nav ul li a:hover,.nav ul li.active a{
+.nav ul li a:hover{
+	color:#FFF;
+	border-bottom: 4px groove #87c442;
+	padding-bottom:3px; 
+}
+
+.nav ul li.active a{
 	color:#FFF;
 	border-bottom: 4px groove #87c442;
 	padding-bottom:3px;
+	
 }
+
+
 .nav{
 	margin-top:20px;
 	float:right;
@@ -50,6 +73,8 @@ body{
   display: none;
   
 }
+
+
 
 .slider{
 	margin:30px 0;

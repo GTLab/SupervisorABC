@@ -1,0 +1,149 @@
+.main-page-top{
+	background:url(../images/top-bg.png) repeat-x;
+	
+}
+.top-rec{
+	width:100%;
+	height:40px;
+}
+
+.martop10{
+	margin-top:10px;
+}
+.martop5{
+	margin-top:5px;
+}
+.l{
+	float:left;
+}
+.r{
+	float: right;
+}
+.top-mid{
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+}
+
+#logins>ul>li {
+	float:left;
+	margin:0px 0px 0px 0px;
+	height: 40px;
+	font-size: 16px;
+	line-height: 20px;
+	z-index: 1000;
+}
+#logins ul li label{
+	font-size:12px;
+	color: #999;
+	margin-top: 3px;
+}
+#logins ul li a{
+	
+	display:inline;
+	padding: 0px 7px;
+	float:none;
+	font-size: 14px;
+	color: #999;
+}
+
+#logins ul li a:hover{
+	background:none;
+	color:#555;
+	 
+}
+
+#logins #userName{
+	cursor: pointer;
+	line-height: 20px;
+	color: #00C;
+	font-weight: bold;
+	padding-right: 11px;
+	background: url(../img/spis_bg.png) no-repeat  right -221px;
+	margin-right: 3px;
+}
+
+#login{
+	padding-left: 6px;
+}
+#register{
+	padding: 0;
+}
+
+#login-reg-li{
+	margin-right: 10px;
+}
+.user-nav-item-on{
+	/*text-align:center;*/
+	background: #fff;
+	list-style: none;
+	white-space: nowrap;
+	line-height: 32px;
+	position:relative;
+	left:-2px;
+	*z-index: 100000;
+}
+.user-nav-item span{
+	left:0px;
+    	display:inline-block;
+	padding-left: 10px;
+	width:220px;
+	background:url(../img/nav_gray.png) no-repeat right 10px top 8px;
+	background:url(../img/nav_gray.png) no-repeat 91% 8px\9;
+	/*text-align: center;*/
+	border:1px solid transparent;
+/*	//border-left:1px solid #000;*/
+	position: relative;
+	
+}
+.user-nav-item-on span{
+	border:1px solid #cccccc;
+	border-bottom: none;
+    left:0px;
+}
+
+#user-state-li {
+	position:relative;
+}
+#user-state-li .username-dropdown{
+	position: absolute;
+	z-index: 99999;
+	width:80px;
+	top: 20px;
+	top: 21px\0;
+	right:10px;
+	background-color: rgb(255,255,255);
+	opacity: 1;
+	border: 1px solid #999;
+	font-weight: 400;
+	box-shadow: 1px 1px 2px #ccc;
+	-moz-box-shadow: 1px 1px 2px #ccc;
+	-webkit-box-shadow: 1px 1px 2px #ccc;
+	filter: alpha(opacity=100); progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color="#cccccc")\9;
+	text-align: left;
+	color: #888;
+	font: 12px Arial;
+    line-height: 18px;
+    padding:7px;
+}
+#nav #logins #user-state-li .username-dropdown a{
+	text-decoration: none;
+	display:inline-block;
+	height:18px;
+	line-height: 18px;
+	padding: 3px 6px;
+	text-align: left;
+	float: none;
+}
+#user-state-li .username-dropdown li{
+	float:none;
+	margin: 0;
+	height:25px;
+	border-bottom: 1px solid #ebebeb;
+
+}
+#user-state-li .username-dropdown li:hover{
+	background: #EBEBEB;
+
+}
