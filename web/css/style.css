@@ -9,7 +9,7 @@ body{
 }
 .wrap{
 	width:1024px;
-	margin:40px auto;
+	margin:auto;
 }
 .header{
 	
@@ -38,7 +38,6 @@ body{
 
 .nav ul li a{
 	display: block;
-	
 	font-size:14px;
 	color:#FFF;
 	margin:10px;
