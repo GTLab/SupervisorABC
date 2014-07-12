@@ -4,6 +4,7 @@
 	
 	<title>GTLab::SupervisorWiki</title>
 	<meta content="Stuff Portal iphone web template, Andriod web template, Smartphone web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" name="keywords" />
+    
 	<link href="./css/reset.css" media="all" rel="stylesheet" type="text/css" />
 	<link href="./css/style.css" media="all" rel="stylesheet" type="text/css" />
 	<link href="./css/slider.css" media="all" rel="stylesheet" type="text/css" />
@@ -59,12 +60,52 @@ $(document).ready(function(){
   );
 });
 </script>
+<script type="text/javascript">
+    function showLogin() {
+            var loginDiv = document.getElementById("loginDiv");
+            loginDiv.style.display ='';
+        }
+    function hideLogin() {
+        var loginDiv = document.getElementById("loginDiv");
+        loginDiv.style.display ='none';
+    }
+</script>
+
 </head>
 <body>
+    <div style="position: absolute;  top: 40px; right: 80px; border-style: solid; border-color: #666;
+        border-width: thin; display:none; z-index:9999; background:url(./images/top-bg.png) repeat-x" id="loginDiv">
+        <img src="./images/circle.png" onclick="hideLogin()" style="float: right"/>
+        <table>
+            <tr>
+                <td>
+                    <label for="username">
+                        username:</label>
+                </td>
+                <td>
+                    <input type="text" id="username"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">
+                        password:</label>
+                </td>
+                <td>
+                    <input type="password" id="passwordpassword"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <input type="submit" id="submit">
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="main-page-top">
         <div class="top-rec">
         <div class="top-mid">
-            <a class="martop5 l" href="http://developer.baidu.com/map/">
+            <a class="martop5 l" href="https://github.com/GTLab">
 				<img src="./images/logo2.png" width=36px height=36px />
 			</a>
             
@@ -90,7 +131,8 @@ $(document).ready(function(){
 						<a target="_blank" href="http://developer.baidu.com" >Cloud</a>
 					</li>
                     <li id="login-reg-li" class="user-nav-item" >
-						<label>|</label> <a id="login" href="" target="_top">Login</a>
+						<label>|</label> <a id="login" href="javascript:showLogin()" target="_top">Login</a>
+                        
                         <label>|</label>
 						<a id="register" href="" target="_top">Register</a>
 					</li> 					
@@ -98,10 +140,9 @@ $(document).ready(function(){
                     
                 </ul>
             </div>
-            
-            
         </div>
         </div>
+        
     </div>
 <div class="main-page">
 <div class="wrap">
@@ -258,5 +299,6 @@ $(document).ready(function(){
 </div>
 </div>
 </div>
+
 </body>
 </html>
