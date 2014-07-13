@@ -18,6 +18,37 @@
 
 }
 
+.login-form{
+	margin-top:96px;
+    margin-left:80px;
+
+}
+.login-form label{
+	display:block;
+	margin-bottom:8px;
+	font-size: 13px;
+}
+.login-form input[type="text"]{
+	width: 190px;
+	padding: 5px;
+	color: #999;
+	background: #FCFCFC;
+	border: 1px solid #DEDEDE;
+	font-size: 16px;
+
+	outline: none
+}
+.login-form input[type="password"]{
+    margin-top:10px;
+	width: 192px;
+	padding: 4px;
+	color: #999;
+	background: #FCFCFC;
+	border: 1px solid #DEDEDE;
+	font-size: 16px;
+
+	outline: none
+}
 
 
 
