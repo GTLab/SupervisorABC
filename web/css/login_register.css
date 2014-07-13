@@ -17,12 +17,17 @@
     z-index:9999;
 
 }
+.main-login-register-wrapper a img{
+	margin-top:57px;
+    margin-left:45px;
 
+}
 .login-form{
 	margin-top:96px;
     margin-left:80px;
 
 }
+
 .login-form label{
 	display:block;
 	margin-bottom:8px;
