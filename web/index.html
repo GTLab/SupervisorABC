@@ -9,6 +9,7 @@
 	<link href="./css/style.css" media="all" rel="stylesheet" type="text/css" />
 	<link href="./css/slider.css" media="all" rel="stylesheet" type="text/css" />
     <link href="./css/topbar.css" media="all" rel="stylesheet" type="text/css" />
+     <link href="./css/login_register.css" media="all" rel="stylesheet" type="text/css" />
 	<script src="./js/jquery.min.js" type="text/javascript"></script><script src="./js/quake.slider-min.js" type="text/javascript"></script><script type="text/javascript">
         $(document).ready(function () {
             $('.quake-slider').quake({ effects: ['fade','swirlFadeIn', 'swirlFadeOut', 'swirlFadeIn', 'linearPealReverse', 'slideIn', 'swirlFadeIn', 'explodeFancy'],
@@ -63,58 +64,36 @@ $(document).ready(function(){
 <script type="text/javascript">
     function showLogin() {
             var loginDiv = document.getElementById("loginDiv");
-            loginDiv.style.right = '80px';
+            var loginDivBG = document.getElementById("loginDivBG");
             loginDiv.style.display ='';
+            loginDivBG.style.display ='';
         }
     function hideLogin() {
         var loginDiv = document.getElementById("loginDiv");
+        var loginDivBG = document.getElementById("loginDivBG");
         loginDiv.style.display ='none';
+        loginDivBG.style.display ='none';
+  
     }
     function showRegister(){
         var loginDiv = document.getElementById("loginDiv");
-        loginDiv.style.right = '0px';
+        var loginDivBG = document.getElementById("loginDivBG");
         loginDiv.style.display ='';
+        loginDivBG.style.display ='';
     }
 </script>
 
 </head>
 <body>
-    <div style="position: absolute;top: 40px; right: 80px; border: 2px solid; boder-radius:25px;border-color: #999;
-        border-width: thin; display:none; z-index:9999; background:url(./images/bg_login.png) repeat" id="loginDiv">
-        <img src="./images/circle.png" onclick="hideLogin()" style="float: right"/>
-        <table>
-            <tr>
-                <td>
-                    <label for="username" font-size:12px;color: #999;>
-                        username:</label>
-                </td>
-               
-            </tr>
-            <tr>
-                <td>
-                    <input type="text" id="username"/>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="password" font-size:12px;color: #999;>
-                        password:</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="password" id="passwordpassword"/>
-                </td>
-            </tr>
-            <tr><td></td></tr>
-            <tr></tr>
-            <tr>
-                <td>
-                <input type="submit" id="submit" font-size:12px;color: #999;/>
-                </td>
-            </tr>
-        </table>
+    
+    <div class="main-login-register" style="position: absolute;display:none; z-index:9998;" onclick="javascript:hideLogin()" id="loginDivBG">
+            
     </div>
+    <div class="main-login-register-wrapper" style="position: absolute;display:none; z-index:9998;" id="loginDiv">
+ 
+    </div>
+    
+    
     <div class="main-page-top">
         <div class="top-rec">
         <div class="top-mid">
@@ -157,6 +136,7 @@ $(document).ready(function(){
         </div>
         
     </div>
+
 <div class="main-page">
 <div class="wrap">
 <div class="header">
